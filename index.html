@@ -2,67 +2,129 @@
 <html>
 <head>
   <title>Nika’s Nail Studio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Poppins;
+      background: #f6f3ef;
+      color: #2b2b2b;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px;
+      flex-wrap: wrap;
+    }
+
+    .text {
+      max-width: 500px;
+    }
+
+    h1 {
+      font-family: "Playfair Display";
+      font-size: 48px;
+      margin: 20px 0;
+    }
+
+    p {
+      color: #666;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 12px 24px;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    .primary {
+      background: #6d5c3d;
+      color: white;
+    }
+
+    .secondary {
+      background: transparent;
+      border: 1px solid #6d5c3d;
+    }
+
+    .image-box img {
+      width: 300px;
+      border-radius: 20px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 60px;
+      background: #f6f3ef;
+    }
+
+    .nav a {
+      text-decoration: none;
+      margin: 0 10px;
+      color: #333;
+    }
+
+    .book-btn {
+      background: #6d5c3d;
+      color: white;
+      padding: 8px 18px;
+      border-radius: 20px;
+    }
+  </style>
 </head>
 
-<body style="margin:0; font-family:Poppins; background:#f8f6f4; color:#333;">
+<body>
 
-<!-- HERO -->
-<div style="text-align:center; padding:80px 20px;">
-  <h1 style="font-family:Playfair Display; font-size:42px;">Nika’s Nail Studio</h1>
-  <p style="color:#777;">Luxury nails, minimalist beauty ✨</p>
+<!-- NAVBAR -->
+<div class="nav">
+  <strong>Nika’s Nail Studio</strong>
 
-  <a href="https://calendly.com/candilladanika/nailappointment">
-    <button style="margin-top:30px; padding:14px 28px; background:black; color:white; border:none;">
-      BOOK APPOINTMENT
-    </button>
-  </a>
-
-  <div style="margin-top:20px;">
-    <a href="https://www.instagram.com/nikasnailstudio/" style="color:black;">
-      View Instagram →
-    </a>
+  <div>
+    <a href="#">Services</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <a href="https://calendly.com/candilladanika/nailappointment" class="book-btn">Book Now</a>
   </div>
 </div>
 
-<!-- GALLERY -->
-<div style="padding:40px 20px; text-align:center;">
-  <h2 style="font-family:Playfair Display;">Our Work</h2>
+<!-- HERO SECTION -->
+<div class="container">
 
-  <div style="display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-top:20px;">
-    <img src="https://via.placeholder.com/200" style="width:200px;">
-    <img src="https://via.placeholder.com/200" style="width:200px;">
-    <img src="https://via.placeholder.com/200" style="width:200px;">
+  <div class="text">
+    <p>PRIVATE NAIL ARTIST</p>
+
+    <h1>Artistry at your fingertips.</h1>
+
+    <p>
+      A one-woman nail studio. Every appointment is clean,
+      detailed, and styled to match your aesthetic.
+    </p>
+
+    <div class="buttons">
+      <a href="https://calendly.com/candilladanika/nailappointment">
+        <button class="primary">Reserve a Slot</button>
+      </a>
+
+      <button class="secondary">View Services</button>
+    </div>
   </div>
 
-  <p style="font-size:12px; color:#999;">*Replace with your real nail photos later*</p>
-</div>
+  <div class="image-box">
+    <!-- REPLACE WITH YOUR REAL IMAGE -->
+    <img src="https://github.com/nikasnailstudio/nikas-nail-studio/blob/main/NIKA.webp">
+  </div>
 
-<!-- PRICE LIST -->
-<div style="padding:40px 20px; text-align:center; background:#fff;">
-  <h2 style="font-family:Playfair Display;">Price List</h2>
-
-  <p>💅 Gel Polish – ₱800</p>
-  <p>💅 Nail Extensions (Prices Varies) – ₱1,200</p>
-  <p>💅 Pedicure & Foot scrub – ₱600</p>
-
-</div>
-
-<!-- LOCATION -->
-<div style="padding:40px 20px; text-align:center;">
-  <h2 style="font-family:Playfair Display;">Visit Us</h2>
-
-  <p>Purok 2 libaong Panglao, Bohol</p>
-
-  <iframe 
-    src="https://maps.google.com/maps?q=panglao%20bohol&t=&z=13&ie=UTF8&iwloc=&output=embed"
-    width="90%" height="250" style="border:0;">
-  </iframe>
-</div>
-
-<!-- FOOTER -->
-<div style="text-align:center; padding:30px; font-size:12px; color:#999;">
-  © Nika’s Nail Studio 💖
 </div>
 
 </body>
