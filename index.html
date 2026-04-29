@@ -3,21 +3,42 @@
 <head>
   <title>Nika’s Nail Studio</title>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
       font-family: Poppins;
-      background: #f6f3ef;
+      background: #f7f5f2;
       color: #2b2b2b;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px;
+    }
+
+    .nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .book-btn {
+      background: #6d5c3d;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
     }
 
     .container {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 80px;
+      padding: 60px 40px;
       flex-wrap: wrap;
     }
 
@@ -26,105 +47,125 @@
     }
 
     h1 {
-      font-family: "Playfair Display";
-      font-size: 48px;
-      margin: 20px 0;
-    }
-
-    p {
-      color: #666;
-    }
-
-    .buttons {
-      margin-top: 20px;
+      font-family: Playfair Display;
+      font-size: 42px;
     }
 
     button {
       padding: 12px 24px;
       border-radius: 25px;
       border: none;
+      margin-top: 20px;
       cursor: pointer;
-      margin-right: 10px;
-    }
-
-    .primary {
       background: #6d5c3d;
       color: white;
-    }
-
-    .secondary {
-      background: transparent;
-      border: 1px solid #6d5c3d;
     }
 
     .image-box img {
-      width: 300px;
+      width: 280px;
       border-radius: 20px;
     }
 
-    .nav {
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .gallery {
       display: flex;
-      justify-content: space-between;
-      padding: 20px 60px;
-      background: #f6f3ef;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
     }
 
-    .nav a {
-      text-decoration: none;
-      margin: 0 10px;
-      color: #333;
+    .gallery img {
+      width: 160px;
+      border-radius: 12px;
     }
 
-    .book-btn {
-      background: #6d5c3d;
-      color: white;
-      padding: 8px 18px;
-      border-radius: 20px;
+    .footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+      color: #888;
+    }
+
+    @media(max-width:768px){
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+<!-- NAV -->
 <div class="nav">
   <strong>Nika’s Nail Studio</strong>
-
   <div>
-    <a href="#">Services</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-    <a href="https://calendly.com/candilladanika/nailappointment" class="book-btn">Book Now</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a href="https://calendly.com/candilladanika/nailappointment" class="book-btn">Book</a>
   </div>
 </div>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 <div class="container">
-
   <div class="text">
     <p>PRIVATE NAIL ARTIST</p>
-
     <h1>Artistry at your fingertips.</h1>
+    <p>Luxury, clean, and detailed nails designed just for you.</p>
 
-    <p>
-      A one-woman nail studio. Every appointment is clean,
-      detailed, and styled to match your aesthetic.
-    </p>
-
-    <div class="buttons">
-      <a href="https://calendly.com/candilladanika/nailappointment">
-        <button class="primary">Reserve a Slot</button>
-      </a>
-
-      <button class="secondary">View Services</button>
-    </div>
+    <a href="https://calendly.com/candilladanika/nailappointment">
+      <button>Reserve Slot</button>
+    </a>
   </div>
 
   <div class="image-box">
-    <!-- REPLACE WITH YOUR REAL IMAGE -->
-    <img src="https://github.com/nikasnailstudio/nikas-nail-studio/blob/main/NIKA.webp">
+    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371">
   </div>
+</div>
 
+<!-- SERVICES -->
+<div class="section" id="services">
+  <h2>Services & Prices</h2>
+  <p>💅 Gel Polish – ₱800</p>
+  <p>💅 Gel X – ₱1,200</p>
+  <p>💅 Gel X minimal design – ₱1,500</p>
+  <p>💅 Gel X full design – ₱1,800</p>
+  <p>💅 BIAB/Hardgel (the design prices are the same as Gel x price) – ₱1,000</p>
+  <p>💅 Pedicure – ₱600</p>
+  <p>💅 Removal – ₱300</p>
+</div>
+
+<!-- GALLERY -->
+<div class="section" id="gallery">
+  <h2>Our Work</h2>
+
+  <div class="gallery">
+    <img src="https://github.com/nikasnailstudio/nikas-nail-studio/blob/main/NIKA.webp">
+    <img src="https://github.com/nikasnailstudio/nikas-nail-studio/blob/main/1.webp">
+    <img src="https://github.com/nikasnailstudio/nikas-nail-studio/blob/main/6.webp">
+    <img src="https://github.com/nikasnailstudio/nikas-nail-studio/blob/main/651037857_122132388098996286_661913668666579311_n.jpg">
+    <img src="https://github.com/nikasnailstudio/nikas-nail-studio/blob/main/e2a3abdd-c052-4e58-ab36-88b986ef945b.jpg">
+  </div>
+</div>
+
+<!-- CONTACT -->
+<div class="section" id="contact">
+  <h2>09241993172</h2>
+  <p>Purok 2 Libaong Panglao, Bohol</p>
+  <p>
+    <a href="https://www.instagram.com/nikasnailstudio/">@nikasnailstudio</a>
+  </p>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  © Nika’s Nail Studio 💖
 </div>
 
 </body>
